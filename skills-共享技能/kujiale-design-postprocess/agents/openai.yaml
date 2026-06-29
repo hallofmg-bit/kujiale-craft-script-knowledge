@@ -1,0 +1,4 @@
+interface:
+  display_name: "酷家乐设计后处理"
+  short_description: "沉淀酷家乐设计后处理、模型修改、参数追加与虚拟模型脚本经验"
+  default_prompt: "Use $kujiale-design-postprocess to implement or troubleshoot a Kujiale design post-processing script."

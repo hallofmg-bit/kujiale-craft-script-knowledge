@@ -1,0 +1,39 @@
+name: 成功案例提交
+description: 提交一条经过真实运行验证的工艺编辑器经验
+title: "[案例] "
+labels:
+  - success-case
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: 业务领域
+      options:
+        - 台面
+        - 设计后处理
+        - 规则检测
+        - 订单后处理
+        - 图纸
+        - 公共调试
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 业务目标
+      description: 说明预期行为和不包含的范围
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 验证证据
+      description: 提供脱敏日志、输出 JSON 检查结果或界面结果
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: 已知限制
+    validations:
+      required: true

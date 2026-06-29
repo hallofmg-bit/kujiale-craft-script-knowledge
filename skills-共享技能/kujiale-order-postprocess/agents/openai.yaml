@@ -1,0 +1,4 @@
+interface:
+  display_name: "酷家乐订单后处理"
+  short_description: "沉淀酷家乐订单字段计算、提审处理、订单模型统计与脚本经验"
+  default_prompt: "Use $kujiale-order-postprocess to implement or troubleshoot a Kujiale order post-processing script."

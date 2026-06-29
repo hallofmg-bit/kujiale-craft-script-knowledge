@@ -1,0 +1,4 @@
+interface:
+  display_name: "酷家乐图纸脚本"
+  short_description: "沉淀酷家乐图纸输出、尺寸标注、加工数据与自定义图纸脚本经验"
+  default_prompt: "Use $kujiale-drawing to implement or troubleshoot a Kujiale drawing script."
