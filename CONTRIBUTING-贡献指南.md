@@ -1,63 +1,46 @@
 # 贡献指南
 
-## 按领域提交
+## 放在哪里
 
-| 内容 | Skill |
-| --- | --- |
-| 台面、洞、挡水、工艺费 | `kujiale-countertop` |
-| 设计后处理、虚拟模型 | `kujiale-design-postprocess` |
-| 规则检测 | `kujiale-rule-check` |
-| 订单字段、提审处理 | `kujiale-order-postprocess` |
-| 图纸、尺寸、加工数据 | `kujiale-drawing` |
-| 语法、日志、发布与通用排错 | `kujiale-common-debug` |
-| GitHub 共享、Git 安装、Skill 制作与分发 | `github-share-agent-skills` |
+- 工艺编辑器脚本、入口、对象、日志、案例和排错：更新 `skills/kujiale-craft-editor/SKILL.md`。
+- Git、GitHub、Skill 制作、安装和跨工具复用：更新 `skills/github-share-agent-skills/`。
+- 不按作者建目录，不为单个函数或单个案例创建 Skill。
 
-不要按作者创建 Skill。作者信息写入案例元数据。
+## 成功经验格式
 
-## 成功案例准入条件
+在对应 `SKILL.md` 中增加一个小节，至少写清：
 
-必须同时满足：
+1. 业务目标、业务模块和系统入口；
+2. 依赖对象及发布顺序；
+3. 完整脱敏脚本；
+4. 正向、反向场景和真实验证证据；
+5. 失败过程、修正原因和已知限制；
+6. 作者或来源摘要、验证日期。
 
-1. 明确业务领域、业务模块和系统入口。
-2. 脚本已保存并发布。
-3. 有真实触发记录。
-4. 有 `printSystemLog`、导出 JSON、规则检测结果或订单结果等证据。
-5. 已验证正向场景和至少一个反向场景。
-6. 已说明适用环境、依赖对象和已知限制。
-7. 已完成脱敏。
+尚未真实验证的内容必须标为“待验证”，不能写成成功结论。
 
-未完成验证的内容放在 PR 描述中讨论，不放进 `cases-成功案例/`。
+## 安全与脱敏
+
+禁止提交：
+
+- Token、密码、Cookie、Access Key 和内部认证配置；
+- 客户姓名、电话、地址、订单号和原始设计方案 JSON；
+- 未脱敏的用户 ID、任务 ID、账号 ID 和完整内部日志；
+- 未获公开授权的企业专属商品 ID、价格或供应链映射；
+- 内部源代码、受限文档全文、未经授权的 CF 截图和附件。
+
+使用 `BG_ID_FOR_20MM`、`TASK_ID_REDACTED` 等占位符。若误提交凭证，停止推送，清理 Git 历史并立即轮换凭证。
 
 ## 提交流程
 
-1. 从 `templates-贡献模板/case-template-成功案例模板.md` 创建案例。
-2. 将案例放入对应 Skill 的 `references/cases-成功案例/`。
-3. 更新该 Skill 的案例索引或 `SKILL.md` 路由。
-4. 运行：
-
-   ```text
-   python scripts-工具脚本/validate-skills-校验技能.py
-   ```
-
-5. 提交 PR，并附验证证据和风险说明。
-
-## 命名规范
-
-案例文件：
-
-```text
-english-slug-中文说明.md
+```bash
+git switch -c skill/short-topic
+python validate-skills-校验技能.py
+git diff --check
+git add <明确文件>
+git diff --cached
+git commit -m "Update shared skill for <topic>"
+git push -u origin skill/short-topic
 ```
 
-Skill 目录及 frontmatter `name`：
-
-```text
-lowercase-english-hyphen
-```
-
-## 修改已有案例
-
-- 行为变化：更新 `updated` 和验证记录。
-- 仅文字修正：保留原验证记录。
-- 新环境尚未验证：明确标注，不覆盖已验证结论。
-- 与已有案例冲突：并列记录环境差异，不直接删除旧结论。
+通过 Pull Request 提交，并附验证证据和风险说明。

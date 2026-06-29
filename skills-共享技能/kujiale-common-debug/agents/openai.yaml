@@ -1,4 +1,0 @@
-interface:
-  display_name: "酷家乐公共调试"
-  short_description: "沉淀酷家乐工艺编辑器通用语法、日志查询、发布依赖与错误排查经验"
-  default_prompt: "Use $kujiale-common-debug to diagnose Kujiale craft-editor syntax, publishing, or logging issues."

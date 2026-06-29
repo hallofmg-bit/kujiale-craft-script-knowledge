@@ -1,4 +1,0 @@
-interface:
-  display_name: "酷家乐规则检测"
-  short_description: "沉淀酷家乐模型规则检测、告警结果、检测入口与脚本排错经验"
-  default_prompt: "Use $kujiale-rule-check to implement or troubleshoot a Kujiale rule-check script."

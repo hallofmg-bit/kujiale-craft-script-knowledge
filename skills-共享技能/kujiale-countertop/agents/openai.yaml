@@ -1,4 +1,0 @@
-interface:
-  display_name: "酷家乐台面脚本"
-  short_description: "沉淀酷家乐台面生成、孔洞、挡水、工艺费与虚拟五金脚本经验"
-  default_prompt: "Use $kujiale-countertop to implement or troubleshoot a Kujiale countertop craft script."
