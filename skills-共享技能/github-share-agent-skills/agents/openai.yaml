@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub共享Agent Skills"
+  short_description: "指导Git安装、GitHub上传下载以及跨AI工具制作和套用共享Skill"
+  default_prompt: "Use $github-share-agent-skills to install Git, share an Agent Skill through GitHub, and apply it in another AI tool."

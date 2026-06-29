@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / "skills-共享技能"
 NAME_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 LINK_PATTERN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+FENCED_CODE_PATTERN = re.compile(r"```.*?```", re.DOTALL)
 
 
 def parse_frontmatter(text: str, path: Path) -> dict[str, str]:
@@ -33,7 +34,8 @@ def parse_frontmatter(text: str, path: Path) -> dict[str, str]:
 
 def validate_links(text: str, path: Path) -> list[str]:
     errors: list[str] = []
-    for target in LINK_PATTERN.findall(text):
+    prose = FENCED_CODE_PATTERN.sub("", text)
+    for target in LINK_PATTERN.findall(prose):
         if target.startswith(("http://", "https://", "#", "mailto:")):
             continue
         target_path = (path.parent / target.split("#", 1)[0]).resolve()

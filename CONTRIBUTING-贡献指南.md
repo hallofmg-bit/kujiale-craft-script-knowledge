@@ -10,6 +10,7 @@
 | 订单字段、提审处理 | `kujiale-order-postprocess` |
 | 图纸、尺寸、加工数据 | `kujiale-drawing` |
 | 语法、日志、发布与通用排错 | `kujiale-common-debug` |
+| GitHub 共享、Git 安装、Skill 制作与分发 | `github-share-agent-skills` |
 
 不要按作者创建 Skill。作者信息写入案例元数据。
 
