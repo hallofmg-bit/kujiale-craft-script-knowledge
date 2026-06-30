@@ -78,7 +78,9 @@ def main() -> int:
         print(f"未找到 Skill 目录: {SKILLS_DIR}", file=sys.stderr)
         return 1
 
-    # 查找所有包含 SKILL.md 的目录（支持 skills/共享人/业务域/ 和 skills/公共skill/ 两种结构）
+    # 查找所有包含 SKILL.md 的目录
+    # skills/共享人/业务域/ （个人 Skill）
+    # 根目录/SKILL目录/     （公共 Skill，如 share-skills-with-github）
     skill_dirs: list[Path] = []
     for contributor in sorted(SKILLS_DIR.iterdir()):
         if not contributor.is_dir():
@@ -88,6 +90,12 @@ def main() -> int:
         for sub in sorted(contributor.iterdir()):
             if sub.is_dir() and (sub / "SKILL.md").exists():
                 skill_dirs.append(sub)
+
+    # 扫描根目录下的公共 Skill 目录
+    for item in sorted(ROOT.iterdir()):
+        if item.is_dir() and (item / "SKILL.md").exists():
+            if item not in skill_dirs:
+                skill_dirs.append(item)
 
     errors: list[str] = []
     for skill_dir in skill_dirs:

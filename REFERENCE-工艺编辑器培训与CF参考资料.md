@@ -359,6 +359,6 @@ VirtualModel 在台面域不可用
 本文是培训和 CF 的综合参考，不作为自动触发 Skill，也不替代已验证脚本。
 
 - 工艺编辑器“设计中-台面”脚本开发与排错：[`shutiao/countertop`](skills/shutiao/countertop/SKILL.md)
-- GitHub 共享和 Skill 复用：[`share-skills-with-github`](skills/share-skills-with-github/SKILL.md)
+- GitHub 共享和 Skill 复用：[`share-skills-with-github`](share-skills-with-github/SKILL.md)
 
 后续新增资料时，优先更新本文的通用知识；只有经过真实运行验证、可直接指导 AI 执行的经验，才更新对应 Skill。

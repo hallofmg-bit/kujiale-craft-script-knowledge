@@ -6,19 +6,18 @@
 
 ```text
 skills/
-├─ shutiao/                    # hallofmg-bit 的经验
-│  └─ countertop/              # "设计中-台面"脚本开发与排错
-│     └─ SKILL.md
-├─ zhangsan/                   # 张三的经验（示例）
-│  └─ SKILL.md
-└─ share-skills-with-github/   # Git、GitHub 与 Skill 共享（公共）
-   └─ SKILL.md
+└─ shutiao/                    # hallofmg-bit 的经验
+   └─ countertop/              # "设计中-台面"脚本开发与排错
+      └─ SKILL.md
+
+share-skills-with-github/      # Git、GitHub 与 Skill 共享（公共，仓库根目录）
+└─ SKILL.md
 ```
 
 - 每位贡献者在 `skills/` 下创建以自己命名的文件夹作为共享人根目录。
 - 共享人文件夹下按业务域建子目录，每个子目录是一个独立的 Skill（包含 `SKILL.md`）。
 - 子目录名与 frontmatter `name` 一致，只用小写英文、数字和连字符。
-- `share-skills-with-github/` 是公共 Skill，管理 Git/GitHub 与 Skill 共享流程，不归属个人。
+- `share-skills-with-github/` 是仓库根目录下的公共 Skill，管理 Git/GitHub 与 Skill 共享流程，不归属个人。
 - 不为单个函数或单个案例单独建 Skill；同一业务域的经验统一维护在对应的 Skill 中。
 
 ## 新人加入
