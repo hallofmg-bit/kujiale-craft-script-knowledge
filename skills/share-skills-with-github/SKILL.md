@@ -109,7 +109,7 @@ git push -u origin main
 
 ## 制作可共享 Skill
 
-按稳定能力或业务领域拆分，不按作者拆分，也不要为每个小函数单独建 Skill。最小结构：
+按共享人建目录，每人维护自己的 Skill；不要为每个小函数单独建 Skill。最小结构：
 
 ```text
 skill-name/

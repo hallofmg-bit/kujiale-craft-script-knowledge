@@ -2,9 +2,27 @@
 
 ## 放在哪里
 
-- 工艺编辑器脚本、入口、对象、日志、案例和排错：更新 `skills/shutiao/SKILL.md`。
-- Git、GitHub、Skill 制作、安装和跨工具复用：更新 `skills/share-skills-with-github/`。
-- 不按作者建目录，不为单个函数或单个案例创建 Skill。
+`skills/` 目录下按共享人创建文件夹，每人维护自己的 Skill：
+
+```text
+skills/
+├─ shutiao/                    # hallofmg-bit 的"设计中"脚本经验
+│  └─ SKILL.md
+├─ zhangsan/                   # 张三的脚本经验
+│  └─ SKILL.md
+└─ share-skills-with-github/   # Git、GitHub 与 Skill 共享（公共）
+   └─ SKILL.md
+```
+
+- 每位贡献者在 `skills/` 下创建以自己命名的文件夹，文件夹名与 frontmatter `name` 一致，只用小写英文、数字和连字符。
+- `share-skills-with-github/` 是公共 Skill，管理 Git/GitHub 与 Skill 共享流程，不归属个人。
+- 不为单个函数或单个案例单独建 Skill；个人经验统一维护在自己的 Skill 中。
+
+## 新人加入
+
+1. 在 `skills/` 下创建自己的文件夹（如 `skills/zhangsan/`）。
+2. 在文件夹中创建 `SKILL.md`，填写 frontmatter 和内容。
+3. 提交 PR，审核通过后即成为该目录的 Code Owner。
 
 ## 成功经验格式
 
@@ -20,11 +38,11 @@
 每个案例标题下方用引用块标注署名：
 
 ```markdown
-## 已验证案例：案例标题
+### 案例 N：案例标题
 
 > 作者：GitHub用户名 | 验证日期：YYYY-MM | 来源：简述项目或场景
 
-### 目标与结论
+#### 目标与结论
 ...
 ```
 
@@ -54,4 +72,4 @@ git commit -m "Update shared skill for <topic>"
 git push -u origin skill/short-topic
 ```
 
-通过 Pull Request 提交，并附验证证据和风险说明。
+通过 Pull Request 提交，并附验证证据和风险说明。只修改自己目录下的文件，不改动他人 Skill。
