@@ -8,9 +8,10 @@
 
 ```text
 skills/
-├─ shutiao/                    # hallofmg-bit 的"设计中"脚本开发与排错
-│  └─ SKILL.md
-├─ zhangsan/                   # 张三的脚本经验（示例）
+├─ shutiao/                    # hallofmg-bit 的经验
+│  └─ countertop/              # "设计中-台面"脚本开发与排错
+│     └─ SKILL.md
+├─ zhangsan/                   # 张三的经验（示例）
 │  └─ SKILL.md
 └─ share-skills-with-github/   # Git、GitHub 与 Skill 共享（公共）
    └─ SKILL.md

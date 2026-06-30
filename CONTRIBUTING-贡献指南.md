@@ -6,23 +6,27 @@
 
 ```text
 skills/
-├─ shutiao/                    # hallofmg-bit 的"设计中"脚本经验
-│  └─ SKILL.md
-├─ zhangsan/                   # 张三的脚本经验
+├─ shutiao/                    # hallofmg-bit 的经验
+│  └─ countertop/              # "设计中-台面"脚本开发与排错
+│     └─ SKILL.md
+├─ zhangsan/                   # 张三的经验（示例）
 │  └─ SKILL.md
 └─ share-skills-with-github/   # Git、GitHub 与 Skill 共享（公共）
    └─ SKILL.md
 ```
 
-- 每位贡献者在 `skills/` 下创建以自己命名的文件夹，文件夹名与 frontmatter `name` 一致，只用小写英文、数字和连字符。
+- 每位贡献者在 `skills/` 下创建以自己命名的文件夹作为共享人根目录。
+- 共享人文件夹下按业务域建子目录，每个子目录是一个独立的 Skill（包含 `SKILL.md`）。
+- 子目录名与 frontmatter `name` 一致，只用小写英文、数字和连字符。
 - `share-skills-with-github/` 是公共 Skill，管理 Git/GitHub 与 Skill 共享流程，不归属个人。
-- 不为单个函数或单个案例单独建 Skill；个人经验统一维护在自己的 Skill 中。
+- 不为单个函数或单个案例单独建 Skill；同一业务域的经验统一维护在对应的 Skill 中。
 
 ## 新人加入
 
 1. 在 `skills/` 下创建自己的文件夹（如 `skills/zhangsan/`）。
-2. 在文件夹中创建 `SKILL.md`，填写 frontmatter 和内容。
-3. 提交 PR，审核通过后即成为该目录的 Code Owner。
+2. 在自己的文件夹下按业务域创建子目录（如 `skills/zhangsan/countertop/`）。
+3. 在子目录中创建 `SKILL.md`，填写 frontmatter 和内容。
+4. 提交 PR，审核通过后即成为该目录的 Code Owner。
 
 ## 成功经验格式
 
