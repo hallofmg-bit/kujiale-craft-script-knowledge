@@ -6,7 +6,7 @@
 
 ```text
 skills/
-├─ develop-kujiale-craft-scripts/ # 开发与排查工艺编辑器脚本
+├─ shutiao/                    # 工艺编辑器"设计中"脚本开发与排错
 │  └─ SKILL.md
 └─ share-skills-with-github/   # 使用 GitHub 共享与复用 Skill
    └─ SKILL.md
@@ -16,6 +16,9 @@ validate-skills-校验技能.py
 ```
 
 只有两个 Skill。需要分享时，直接分享或复制对应的整个 Skill 文件夹。
+
+培训视频与 CF 综合知识见
+[REFERENCE-工艺编辑器培训与CF参考资料.md](REFERENCE-工艺编辑器培训与CF参考资料.md)。该文件仅作为参考资料，不参与 Skill 自动触发。
 
 ## 使用
 
@@ -40,7 +43,7 @@ git clone https://github.com/hallofmg-bit/kujiale-craft-script-knowledge.git
 ## 贡献
 
 不要再为每个小功能新建 Skill。工艺编辑器经验统一补充到
-`skills/develop-kujiale-craft-scripts/SKILL.md`；只有形成独立、稳定且经常单独使用的大能力时，才新增 Skill。
+`skills/shutiao/SKILL.md`；只有形成独立、稳定且经常单独使用的大能力时，才新增 Skill。
 
 提交前运行：
 

@@ -2,8 +2,8 @@
 
 ## 放在哪里
 
-- 工艺编辑器脚本、入口、对象、日志、案例和排错：更新 `skills/kujiale-craft-editor/SKILL.md`。
-- Git、GitHub、Skill 制作、安装和跨工具复用：更新 `skills/github-share-agent-skills/`。
+- 工艺编辑器脚本、入口、对象、日志、案例和排错：更新 `skills/shutiao/SKILL.md`。
+- Git、GitHub、Skill 制作、安装和跨工具复用：更新 `skills/share-skills-with-github/`。
 - 不按作者建目录，不为单个函数或单个案例创建 Skill。
 
 ## 成功经验格式

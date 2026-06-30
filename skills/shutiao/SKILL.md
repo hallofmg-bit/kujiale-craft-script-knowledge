@@ -1,5 +1,5 @@
 ---
-name: develop-kujiale-craft-scripts
+name: shutiao
 description: 酷家乐工艺编辑器"设计中"脚本开发与排错知识。当前聚焦"设计中-台面"模块的 generateFee、Fee、Countertop 等对象，用于台面洞、挡水、工艺费、台面虚拟五金、printSystemLog、未找到定义、唯一标识冲突、格式错误、脚本不触发、生成 JSON 无结果等场景。后续将扩展其他业务域。
 ---
 
