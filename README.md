@@ -6,11 +6,10 @@
 
 ```text
 skills/
-├─ kujiale-craft-editor/       # 工艺编辑器开发、案例与排错
+├─ develop-kujiale-craft-scripts/ # 开发与排查工艺编辑器脚本
 │  └─ SKILL.md
-└─ github-share-agent-skills/  # Git、GitHub 与 Skill 共享
-   ├─ SKILL.md
-   └─ scripts/
+└─ share-skills-with-github/   # 使用 GitHub 共享与复用 Skill
+   └─ SKILL.md
 
 CONTRIBUTING-贡献指南.md
 validate-skills-校验技能.py
@@ -35,18 +34,13 @@ git clone https://github.com/hallofmg-bit/kujiale-craft-script-knowledge.git
 | TRAE | `Settings -> Rule & Skills -> Skills -> Create` |
 | 其他工具 | 导入包含 `SKILL.md` 的整个目录 |
 
-也可以使用安装脚本：
-
-```bash
-python skills/github-share-agent-skills/scripts/install-skill-安装Skill.py \
-  --source skills/kujiale-craft-editor \
-  --tool codex
-```
+安装时直接复制包含 `SKILL.md` 的整个 Skill 文件夹；所需自动化脚本源码已经收录在
+`share-skills-with-github/SKILL.md` 中。
 
 ## 贡献
 
 不要再为每个小功能新建 Skill。工艺编辑器经验统一补充到
-`skills/kujiale-craft-editor/SKILL.md`；只有形成独立、稳定且经常单独使用的大能力时，才新增 Skill。
+`skills/develop-kujiale-craft-scripts/SKILL.md`；只有形成独立、稳定且经常单独使用的大能力时，才新增 Skill。
 
 提交前运行：
 

@@ -1,9 +1,9 @@
 ---
-name: kujiale-craft-editor
+name: develop-kujiale-craft-scripts
 description: 酷家乐工艺编辑器脚本开发与排错知识。用于台面、洞、挡水、工艺费、Fee、generateFee、设计后处理、VirtualModel、规则检测、订单后处理、图纸、printSystemLog、未找到定义、唯一标识冲突、格式错误、脚本不触发、生成 JSON 无结果等场景；包含台下盆按台面厚度生成虚拟五金的已验证案例。
 ---
 
-# 酷家乐工艺编辑器
+# 开发与排查酷家乐工艺编辑器脚本
 
 ## 先选对执行域
 
@@ -92,6 +92,8 @@ https://tetris.qunhequnhe.com/log
 - 区分设计尺寸与加工尺寸；先验证最小几何，再覆盖 L/U 型、空数据和异常轮廓。
 
 ## 已验证案例：台下盆按厚度生成虚拟五金
+
+> 作者：hallofmg-bit | 验证日期：2025-06 | 来源：工艺编辑器项目实战
 
 ### 目标与结论
 
